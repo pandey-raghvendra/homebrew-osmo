@@ -1,28 +1,28 @@
 class Osmo < Formula
   desc "Terraform drift absorber — rewrites .tf files to match real-world state"
   homepage "https://github.com/pandey-raghvendra/osmo"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.1/osmo_0.1.1_darwin_arm64.tar.gz"
-      sha256 "c121f03443eccbe47570db44d3fc841cbb5383be598f4aaa99c73649ae62c8ba"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.2/osmo_0.1.2_darwin_arm64.tar.gz"
+      sha256 "992369f18281aba03e729fc0318a0d8b6ea2d68b5ce04f846334e97271047df8"
     end
     on_intel do
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.1/osmo_0.1.1_darwin_amd64.tar.gz"
-      sha256 "ce0ebef2b6c672c701c3513f05b97dbc160823ca011d446fac9b31adc47cc849"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.2/osmo_0.1.2_darwin_amd64.tar.gz"
+      sha256 "dceaade18900c091ba56861daa026fc4eb21c429c1dfd1d9d874c293a24e5c3b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.1/osmo_0.1.1_linux_arm64.tar.gz"
-      sha256 "070a623a25ad086a32913f6d290d8f0e6deb4b4b10061772b373702c905ec80a"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.2/osmo_0.1.2_linux_arm64.tar.gz"
+      sha256 "87f16d1b6e523acbce88ff6e0c0336f590e651f64238ea026385698702f2a227"
     end
     on_intel do
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.1/osmo_0.1.1_linux_amd64.tar.gz"
-      sha256 "03b729fd904f8b9b0ff9ebe7003ae3e3bbc507fe2f0d3f6366c7f492e13dd22c"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v0.1.2/osmo_0.1.2_linux_amd64.tar.gz"
+      sha256 "826d03743ccd56fe91f5b13737433cb5c623e7687365f552a12fcc04d88cbf2e"
     end
   end
 

@@ -5,21 +5,21 @@
 class Osmo < Formula
   desc "Terraform drift absorber — rewrites .tf files to match real-world state"
   homepage "https://github.com/pandey-raghvendra/osmo"
-  version "1.0.0"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.0.0/osmo_1.0.0_darwin_amd64.tar.gz"
-      sha256 "cd444a87952678588f7229a51f814f98e0154ea71690a2414e2198038c32cf02"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.1.0/osmo_1.1.0_darwin_amd64.tar.gz"
+      sha256 "d173d9833d09d227f0d6bf4f488bd60038a5c1bc05fc30b4a838d77e1bd69000"
 
       define_method(:install) do
         bin.install "osmo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.0.0/osmo_1.0.0_darwin_arm64.tar.gz"
-      sha256 "2532b1f645e856faaca7e20da2bc25b96bf54e4e302c1315e418dc3235d6ba5a"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.1.0/osmo_1.1.0_darwin_arm64.tar.gz"
+      sha256 "7a0937ad5cf8fbd17c53f8491783568ddf8004f8e8646ebb21067ecb15c7a3ff"
 
       define_method(:install) do
         bin.install "osmo"
@@ -29,15 +29,15 @@ class Osmo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.0.0/osmo_1.0.0_linux_amd64.tar.gz"
-      sha256 "c25ec51662b36a716916da98e4901dc7eb1cf58e560e50ddfc5e9bdce28092e9"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.1.0/osmo_1.1.0_linux_amd64.tar.gz"
+      sha256 "6a7088afe55567ffc6f2952d80864f88f9f2a7cef44a0c9ef1806bece68c7e76"
       define_method(:install) do
         bin.install "osmo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.0.0/osmo_1.0.0_linux_arm64.tar.gz"
-      sha256 "7e4bfe4319a708f39003040853c6cc7d0f0882a674aae548c3e3afde170d183f"
+      url "https://github.com/pandey-raghvendra/osmo/releases/download/v1.1.0/osmo_1.1.0_linux_arm64.tar.gz"
+      sha256 "e1f4f56af22386bb2b6123c54d84d033a55796cf16887019c0962893354faa36"
       define_method(:install) do
         bin.install "osmo"
       end
